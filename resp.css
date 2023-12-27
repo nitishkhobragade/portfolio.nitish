@@ -93,7 +93,7 @@
 
     /* making hero section responsive  */
 
-/* @media (max-width:1300px) {
+@media (max-width:1300px) {
     .resp{
         max-width: 1200px;
         width:98%;
@@ -107,13 +107,11 @@
       padding-top: -1rem;
       padding-bottom: 3rem;
     }
-    .hero-section-description {
+    .hero-section-desc {
       text-align: center;
       margin: auto;
     }
-    .faded-text {
-      display: none;
-    }
+
     #btn-top {
       display: none;
     }
@@ -126,14 +124,28 @@
       scale: 0.7;
     }
     .faded-text{
-        bottom: -8%;
-        left:0;
+    font-size: 4em;
+    bottom:-9%;
+    left: 2%;
+  
     }
 
-  } */
+  }
   /* Hero section end */
 
   /* Hero Right Section End */
-@media (max-width:1300px) {
+@media (max-width:420px) {
+    .faded-text{
+        font-size: 3.5em;
+        bottom:-8%;
+        left: 2%;
+      
+        }
+  }
 
+
+  @media (max-width:1024px) {
+    .skills-container{
+        flex-wrap: wrap;
+    }
   }
