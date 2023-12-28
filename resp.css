@@ -134,18 +134,133 @@
   /* Hero section end */
 
   /* Hero Right Section End */
-@media (max-width:420px) {
+
+
+  @media (max-width:1024px) {
+    .blob-style{
+      width: 80%;
+    }
+
+      .skill-fade-text{
+        font-size: 8em;
+        right: 3%;
+        bottom: -25.5%;
+        
+        overflow-y: hidden;
+    }
+
+    .skill-container-right{
+      /* flex-wrap: wrap; */
+      width: 50%;
+      height: 600px;
+    }
+
+    .skills-logo{
+      width: 70px;
+      height: 70px;
+      transition: all 0.5s;
+  }
+
+}
+
+@media (max-width:800px){
+
+  .skill-fade-text{
+    font-size: 7em;
+    right: 3%;
+    bottom: -4.5%;
+}
+  .skills-container{
+      flex-wrap: wrap;
+      padding: 5rem;
+      margin: 10rem auto;
+      margin-bottom: 1rem;
+      gap: 30px;
+
+    }
+  .skill-container-right{
+    width: 80%;
+    margin: auto;
+  }
+
+  .skill-container-left{
+    width: 100%;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  .blob-style{
+    width: 50%;
+  }
+
+  .contactus-heading{
+    font-size: 10vw;
+    padding-top: 2rem;
+}
+
+.contactus-sub-heading{
+    font-size: 7vw;
+}
+
+.footer-wrapper{
+  flex-wrap: wrap;
+}
+
+}
+
+@media (max-width:500px){
+
+  .skills-container{
+    position: relative;
+    display: flex;
+    padding: 2rem;
+    margin: 2rem auto;
+    gap: 0px;
+    width: 90%;
+}
+
+.skill-container-right{
+
+  gap: 3rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+
+}
+.skills-logo{
+  margin: 0 0 -19px 0;
+}
+
+  .skill-fade-text{
+    font-size: 5em;
+    right: 3%;
+    bottom: -5.0%;
+}
+  .skills-logo{
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+ 
+
+  .footer-faded-text{
+    position: absolute;
+    left:0;
+    bottom:0;
+    font-size: 7vw;
+}
+}
+
+  @media (max-width:420px) {
     .faded-text{
         font-size: 3.5em;
         bottom:-8%;
         left: 2%;
       
         }
+
+    .skill-fade-text{
+      font-size: 5em;
+      right: 0;
+      overflow-y: hidden;
   }
-
-
-  @media (max-width:1024px) {
-    .skills-container{
-        flex-wrap: wrap;
-    }
   }
