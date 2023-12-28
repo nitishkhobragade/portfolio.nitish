@@ -248,6 +248,29 @@
     bottom:0;
     font-size: 7vw;
 }
+
+#submit-btn{
+  display: flex;
+  font-size: 4vw;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+
+.form{
+  font-size: 3px;
+  margin: 2rem 2rem 0 0;
+}
+
+footer{
+  width: 100%;
+  padding: 2rem;
+}
+
+
+
 }
 
   @media (max-width:420px) {
@@ -263,4 +286,23 @@
       right: 0;
       overflow-y: hidden;
   }
+  .footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    width: 90%;
+   
+}
+.link-wrapper{
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.icon-wrapper{
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
   }
