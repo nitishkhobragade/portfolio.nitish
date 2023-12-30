@@ -305,4 +305,25 @@ footer{
   justify-content: center;
 }
 
+/* project container responsive  */
+.project-content{
+  padding: 0.5em;
+}
+.project-heading{
+  font-size: 10vw;
+  line-height: 2rem;
+}
+
+.project-subheading{
+  width: 70%;
+  font-size: 7vw;
+}
+
+.btn-group{
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  width: 100%;
+}
+
   }
