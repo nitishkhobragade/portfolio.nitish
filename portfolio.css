@@ -152,6 +152,7 @@ a{
     border: solid 3px transparent;
     position: relative;
     z-index:1;
+    color: black;
 }
 
 .stylish-btn::before{
