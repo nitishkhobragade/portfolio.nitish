@@ -283,10 +283,32 @@ footer{
         .project-skills-container{
           width: 90%;
           display: flex;
-          gap:10px;
+          gap:9px;
           flex-wrap: wrap;
       
       }
+
+      .btn-group{
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+    }
+    
+    .btn-project{
+        border: none;
+        padding: 0.4rem 2rem;
+    }
+    
+    .btn-project:hover{
+        border: none;
+    }
+    
+    .icon{
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        transition:all 0.5s;
+    }
 
     .skill-fade-text{
       font-size: 5em;
