@@ -67,6 +67,7 @@
     .project-card:hover .project-content {
       scale: 0.55;
     }
+
     #project1{
         margin-left: 0;
     }
@@ -337,7 +338,9 @@ footer{
 /* project container responsive  */
 .project-content{
   padding: 0.5em;
+  bottom: 60%;
 }
+
 .project-heading{
   font-size: 10vw;
   line-height: 2rem;
