@@ -270,6 +270,9 @@ footer{
   padding: 2rem;
 }
 
+.project-content{
+  bottom: 65%;
+}
 
 
 }
@@ -338,7 +341,7 @@ footer{
 /* project container responsive  */
 .project-content{
   padding: 0.5em;
-  bottom: 60%;
+  bottom: 65%;
 }
 
 .project-heading{
