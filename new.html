@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the diverse and innovative portfolio of Nitish Khobragade, a skilled Web Developer and Graduate Engineer. Discover projects showcasing proficiency in HTML, CSS, JavaScript, Bootstrap, Tailwind, PHP, and MySQL.">
+    <meta name="keywords" content="Nitish Khobragade, Portfolio, Web Developer, Graduate Engineer, HTML, CSS, JavaScript, Bootstrap, Tailwind, PHP, MySQL, React, NodeJS">
+    <meta name="author" content="Nitish Khobragade">
+    <title>Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body class="bg-gray-100 font-sans transition duration-300">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Dark/Light Mode Toggle Button -->
+        <div class="fixed top-4 right-4">
+            <button id="toggle-button" class="bg-gray-300 rounded-full p-2 shadow-md focus:outline-none">
+                <img id="toggle-icon" src="./img/moon.png" alt="Toggle Icon" class="w-6 h-6">
+            </button>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/3 mb-8 lg:mb-0">
+                <img src="./img/userAsset/nitish1.png" alt="Profile Picture" class="rounded-full w-32 h-32 lg:w-48 lg:h-48 mx-auto lg:mx-0 lg:mr-4 border-4 border-gray-300">
+            </div>
+            <div class="lg:w-2/3 lg:pl-4 text-center lg:text-left">
+                <h1 class="text-3xl font-bold">Nitish Kumar Khobragade</h1>
+                <!-- Typed.js Role Section -->
+                <div class="hero-section-heading hero-section-sub-heading">
+                    I am a <span class="role"></span>
+                </div>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">Brief description about yourself or your profession.</p>
+                <!-- skills started  -->
+                <div class="mt-4 flex flex-wrap justify-center lg:justify-start gap-2">
+                    <button class="skill-button border-red-500 text-red-500 py-2 px-4 rounded hover:bg-red-200 dark:hover:bg-red-700 dark:text-red-300">HTML</button>
+                    <button class="skill-button border-blue-500 text-blue-500 py-2 px-4 rounded hover:bg-blue-200 dark:hover:bg-blue-700 dark:text-blue-300">CSS</button>
+                    <button class="skill-button border-yellow-500 text-yellow-500 py-2 px-4 rounded hover:bg-yellow-200 dark:hover:bg-yellow-700 dark:text-yellow-300">JavaScript</button>
+                    <button class="skill-button border-green-500 text-green-500 py-2 px-4 rounded hover:bg-green-200 dark:hover:bg-green-700 dark:text-green-300">React JS</button>
+                    <button class="skill-button border-yellow-500 text-yellow-500 py-2 px-4 rounded hover:bg-yellow-200 dark:hover:bg-yellow-700 dark:text-yellow-300">Tailwind CSS</button>
+                </div>
+                
+                <!-- skills ended  -->
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-center">Social Profiles</h2>
+        <div class="flex justify-center space-x-4 mb-8">
+            <a href="https://github.com/yourusername" target="_blank" class="social-button social-github text-gray-700 hover:text-white">
+                <img src="images/icons/github.png" alt="GitHub" class="w-8 h-8">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-button social-linkedin text-gray-700 hover:text-white">
+                <img src="images/icons/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+            </a>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-center">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden relative group dark:bg-gray-800 project-card">
+                <img src="project1.jpg" alt="Project 1" class="w-full h-32 object-cover">
+                <div class="project-icons">
+                    <a href="https://link-to-your-project1.com" target="_blank" class="project-icon">
+                        <img src="images/icons/view.png" alt="View" class="project-icon">
+                    </a>
+                    <a href="https://github.com/yourusername/project1" target="_blank" class="project-icon">
+                        <img src="images/icons/github.png" alt="GitHub" class="project-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="project-icon">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn" class="project-icon">
+                    </a>
+                </div>
+                <div class="absolute inset-0 bg-gray-800 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Project Title 1</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Short description of your project.</p>
+                </div>
+            </div>
+            <!-- Repeat project cards for additional projects -->
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden relative group dark:bg-gray-800 project-card">
+                <img src="project2.jpg" alt="Project 2" class="w-full h-32 object-cover">
+                <div class="project-icons">
+                    <a href="https://link-to-your-project2.com" target="_blank" class="project-icon">
+                        <img src="images/icons/view.png" alt="View" class="project-icon">
+                    </a>
+                    <a href="https://github.com/yourusername/project2" target="_blank" class="project-icon">
+                        <img src="images/icons/github.png" alt="GitHub" class="project-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="project-icon">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn" class="project-icon">
+                    </a>
+                </div>
+                <div class="absolute inset-0 bg-gray-800 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Project Title 2</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Short description of your project.</p>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+    <!-- footer started  -->
+    <footer class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-300">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="footer-faded-text text-center md:text-left mb-4 md:mb-0 font-bold">
+                    Nitish Kumar
+                </div>
+    
+                <div class="link-wrapper flex flex-col md:flex-row mb-4 md:mb-0">
+                    <div class="mx-2">
+                        <a href="#projects" class="footer-link">Projects</a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="#skills" class="footer-link">Skills</a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="#contactme" class="footer-link">Contact Me</a>
+                    </div>
+                </div>
+    
+                <div class="icon-wrapper flex space-x-4">
+                    <a href="https://www.linkedin.com/in/nitishkhobragade/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/nitishkhobragade/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/djnitish97/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nitish_khobragade/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:nitishkhobragade89@gmail.com" target="_blank" class="footer-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ended   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const toggleIcon = document.getElementById('toggle-icon');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            toggleIcon.src = body.classList.contains('dark') ? './img/sun.png' : './img/moon.png';
+        });
+    </script>
+    <script>
+    var typeData = new Typed(".role", {
+        strings: [
+        "Software Engineer",
+        "Full Stack Developer",
+        "Web Developer",
+        "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+    });
+    </script>
+</body>
+</html>

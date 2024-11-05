@@ -8,343 +8,254 @@
     <meta name="author" content="Nitish Khobragade">
     <title>Portfolio Website</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="resp.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./new.css">
 </head>
-<body>
-    <div id="main-wrapper">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo-container">
-                    <img src="img/userAsset/NavLogo.png" alt="logo" class="n-logo">
-                    <div class="logo-text">itish Khobragade</div>
-                </div>
+<body class="bg-gray-100 font-sans transition duration-300">
 
-                <div class="nav-items">
-                    <div><a href="#projects">Projects</a></div>
-                    <div><a href="#skills">Skills</a></div>
-                    <div><a href="#contactme">Contact Me</a></div>
-                </div>
-
-            </nav>
-
-            
-            <div class="hero-section container">
-
-                <div class="faded-text">Nitish Kumar</div>
-    
-                <div class="hero-section-left">
-                    <div class="hero-section-heading">Hi! Nitish Khobragade</div>
-    
-                    <div class="hero-section-heading hero-section-sub-heading">
-                        I am a <span class="role"></span>
-                    </div>
-    
-                    <div class="hero-section-desc">
-                        I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer.
-                    </div>
-    
-                    <a class="stylish-btn" id="btn-top" href="doc/nitish-resume-pro.pdf" download="nitish-resume-pro.pdf">Download CV</a>
-    
-                </div>
-    
-                <div class="hero-section-right">
-    
-                    <div class="absolute icons icon-dots">
-                        <img src="./img/userAsset/dots.png" alt="dots icon">
-                    </div>
-                    <div class="absolute icons icon-cube">
-                        <img src="./img/userAsset/cube.png" alt="cube icon" width="41px">
-                    </div>
-                    <div class="absolute icons icon-circle">
-                        <img src="./img/userAsset/circle.png" alt="circle icon">
-                    </div>
-                    <div class="absolute icons icon-zigzag">
-                        <img src="./img/userAsset/zigzags.png" alt="zigzag icon">
-                    </div>
-                    <div class="absolute icons icon-plus">
-                        <img src="./img/userAsset/plus.png" alt="plus icon">
-                    </div>
-                    <div class="user-image">
-                        <img src="./img/userAsset/nitish1.png" alt="user image" height="280px">
-                    </div>
-    
-                </div>
-                <a class="stylish-btn" id="btn-bottom" href="doc/nitish-resume-pro.pdf" download="nitish-resume-pro.pdf">Download CV</a>
-    
-            </div>
-            
-
+    <div class="container mx-auto px-4 py-8">
+        <!-- Dark/Light Mode Toggle Button -->
+        <div class="fixed top-4 right-4">
+            <button id="toggle-button" class="bg-gray-300 rounded-full p-2 shadow-md focus:outline-none">
+                <img id="toggle-icon" src="./img/moon.png" alt="Toggle Icon" class="w-6 h-6">
+            </button>
         </div>
+        <!-- Dark/Light Mode Toggle Button -->
 
-        <!-- project section  -->
-        <div class="project-section" id="projects">
-             <h2 class="page-header">Projects</h2>
-
-             <div class="project-container">
-                <div class="project-card" id="project1">
-                    <div class="project-number project-number-right">01</div>
-                    <div class="project-content project-content-left">
-                        <div class="project-skills-container">
-                            <img src="./img/stack/HTML.png" alt="" class="project-skill">
-                            <img src="./img/stack/CSS.png" alt="" class="project-skill">
-                            <img src="./img/stack/Javascript.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Git.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Github.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Bootstrap.svg" alt="" class="project-skill">
-                            <img src="./img/stack/php-icon.svg" alt="" class="project-skill">
-                            <img src="./img/stack/mysql-official.svg" alt="" class="project-skill">
-                            <img src="./img/stack/replit-logo.svg" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">HMS</h2>
-                        <div class="project-subheading">Its a project of management of a hospital</div>
-                        <div class="btn-group">
-                            <button class="stylish-btn btn-project">Read More</button>
-                            <a href="">
-                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="">
-                                <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-card" id="project2">
-                    <div class="project-number project-number-left">02</div>
-                    <div class="project-content project-content-right">
-                        <div class="project-skills-container">
-                            <img src="./img/stack/HTML.png" alt="" class="project-skill">
-                            <img src="./img/stack/CSS.png" alt="" class="project-skill">
-                            <img src="./img/stack/Javascript.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Git.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Github.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Bootstrap.svg" alt="" class="project-skill">
-                            <img src="./img/stack/php-icon.svg" alt="" class="project-skill">
-                            <img src="./img/stack/mysql-official.svg" alt="" class="project-skill">
-                            <img src="./img/stack/replit-logo.svg" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">Javascript Small Projects</h2>
-                        <div class="project-subheading">A Complete Repository consists of small javascript projects created by me</div>
-                        <div class="btn-group">
-                            <a class="stylish-btn btn-project" href="https://nitishkhobragade.github.io/js_small_projects/">Read More</a>
-                            <a href="https://github.com/nitishkhobragade/js_small_projects">
-                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="https://nitishkhobragade.github.io/js_small_projects/">
-                                <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-card" id="project3">
-                    <div class="project-number project-number-right">03</div>
-                    <div class="project-content project-content-left">
-                        <div class="project-skills-container">
-                            <img src="./img/stack/HTML.png" alt="" class="project-skill">
-                            <img src="./img/stack/CSS.png" alt="" class="project-skill">
-                            <img src="./img/stack/Javascript.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Git.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Github.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Bootstrap.svg" alt="" class="project-skill">
-                            <img src="./img/stack/php-icon.svg" alt="" class="project-skill">
-                            <img src="./img/stack/mysql-official.svg" alt="" class="project-skill">
-                            <img src="./img/stack/replit-logo.svg" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">Project Name</h2>
-                        <div class="project-subheading">Project is uploading soon</div>
-                        <div class="btn-group">
-                            <button class="stylish-btn btn-project">Read More</button>
-                            <a href="">
-                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="">
-                                <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project-card" id="project4">
-                    <div class="project-number project-number-left">04</div>
-                    <div class="project-content project-content-right">
-                        <div class="project-skills-container">
-                            <img src="./img/stack/HTML.png" alt="" class="project-skill">
-                            <img src="./img/stack/CSS.png" alt="" class="project-skill">
-                            <img src="./img/stack/Javascript.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Git.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Github.svg" alt="" class="project-skill">
-                            <img src="./img/stack/Bootstrap.svg" alt="" class="project-skill">
-                            <img src="./img/stack/php-icon.svg" alt="" class="project-skill">
-                            <img src="./img/stack/mysql-official.svg" alt="" class="project-skill">
-                            <img src="./img/stack/replit-logo.svg" alt="" class="project-skill">
-                        </div>
-                        <h2 class="project-heading">Project Name</h2>
-                        <div class="project-subheading">Project is uploading soon</div>
-                        <div class="btn-group">
-                            <button class="stylish-btn btn-project">Read More</button>
-                            <a href="">
-                                <i title="GithubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="">
-                                <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </div>
-
-        <!-- Skill Section Start  -->
-        <!-- Skills -->
-        <div id="skills" class="container skills-container">
-            <div class="absolute skill-fade-text">Skills</div>
-            <!-- Left Section -->
-            <div class="skill-container-left">
-            <h2 class="skill-heading">
-                <span class="caps">M</span>e and
-                <br />
-                MyTech Stack
-            </h2>
-            <div class="skill-subHeading">
-                <p>
-                    Hi Everyone My name is Nitish Khobragade I am a Web Developer , Graduate Engineer, working on various type of web technology stacks.        <p>
-                 My expertise spans HTML, CSS, JavaScript, Bootstrap, Tailwind, PHP, MySQL, while leveraging Vercel, Replit, Git, GitHub, and VSCode for streamlined development. Dive into my projects to witness a blend of creativity, functionality, and a commitment to staying at the forefront of web technology. 
-                </p>
-                <p>
-                Embark on this web development journey with me, where I blend passion and proficiency to create immersive digital experiences.  Let's code for the future together!
-                </p>
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/3 mb-8 lg:mb-0 lg:pl-32">
+                <img src="./img/userAsset/nitish1.png" alt="Profile Picture" class="rounded-full w-32 h-32 lg:w-48 lg:h-48 mx-auto lg:mx-0 lg:mr-4 border-4 border-gray-300 mb-2  lg:mb-4">
+        
+                <!-- Download CV Button -->
+                <a class="stylish-btn mt-5 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 shadow-lg lg:ml-6"
+                   id="btn-top"
+                   href="doc/nitish-resume-pro.pdf"
+                   download="nitish-resume-pro.pdf">
+                   Download CV
+                </a>
             </div>
-            </div>
-
-            <!-- Right Section -->
-
-            <div class="skill-container-right">
-            <img src="./img/userAsset/blob vector.png" class="blob-style" alt="" />
-
-            
-            <img src="./img/stack/HTML.png" alt="" class="skills-logo" />
-            <img src="./img/stack/CSS.png" alt="" class="skills-logo" />
-            <img src="./img/stack/Javascript.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/React.png" alt="" class="skills-logo" />
-            <img src="./img/stack/NodeJs.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/Tailwind.png" alt="" class="skills-logo" />
-            <img src="./img/stack/Bootstrap.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/Express.png" alt="" class="skills-logo" />
-            <img src="./img/stack/MongoDB.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/Git.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/Github.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/php-icon.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/mysql-official.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/Vercel.svg" alt="" class="skills-logo" />
-            <img src="./img/stack/replit-logo.svg" alt="" class="skills-logo" />
+            <div class="lg:w-2/3 lg:pl-4 text-center lg:text-left">
+                <h1 class="text-3xl font-bold lg:text-4xl">Nitish Kumar Khobragade</h1>
+                <!-- Typed.js Role Section -->
+                <div class="hero-section-heading hero-section-sub-heading">
+                    I am a <span class="role"></span>
+                </div>
+        
+                <p class="mt-2 text-gray-700 dark:text-gray-300"> I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer.</p>
+                <!-- skills started  -->
+                <div class="mt-4 flex flex-wrap justify-center lg:justify-start gap-2">
+                    <button class="skill-button border-red-500 text-red-500 py-2 px-4 rounded hover:bg-red-200 dark:hover:bg-red-700 dark:text-red-300">HTML</button>
+                    <button class="skill-button border-blue-500 text-blue-500 py-2 px-4 rounded hover:bg-blue-200 dark:hover:bg-blue-700 dark:text-blue-300">CSS</button>
+                    <button class="skill-button border-yellow-500 text-yellow-500 py-2 px-4 rounded hover:bg-yellow-200 dark:hover:bg-yellow-700 dark:text-yellow-300">JavaScript</button>
+                    <button class="skill-button border-green-500 text-green-500 py-2 px-4 rounded hover:bg-green-200 dark:hover:bg-green-700 dark:text-green-300">React JS</button>
+                    <button class="skill-button border-yellow-500 text-yellow-500 py-2 px-4 rounded hover:bg-yellow-200 dark:hover:bg-yellow-700 dark:text-yellow-300">Tailwind CSS</button>
+                    <button class="skill-button border-green-500 text-green-500 py-2 px-4 rounded hover:bg-green-200 dark:hover:bg-green-700 dark:text-green-300">GitHub</button>
+                    <button class="skill-button border-blue-500 text-blue-500 py-2 px-4 rounded hover:bg-blue-200 dark:hover:bg-blue-700 dark:text-blue-300">VS Code</button>
+                    <button class="skill-button border-yellow-500 text-yellow-500 py-2 px-4 rounded hover:bg-yellow-200 dark:hover:bg-yellow-700 dark:text-yellow-300">Replit</button>
+                </div>
+                <!-- skills ended  -->
             </div>
         </div>
-        <!-- Skill Section End  -->
+        
 
-        <!-- contact us form  -->
-        <div class="contactus-form-container" id="contactme">
-            <div class="container">
-                <h1 class="contactus-heading">Contact Me</h1>
-                <h3 class="contactus-sub-heading">Questions, thoughts, or just want to say hello?</h3>
-                <div class="contactus-form-container">
-                    <form action="https://formspree.io/f/xayrywqy" method="POST" class="form">
-                        <div class="formfield-container">
-                            <input type="text" name="Name" id="" placeholder="Enter your name"  class="formfield" required/>
+        <!-- social started  -->
+        <h2 class="text-2xl font-semibold mt-2 mb-4 text-center">Social Profiles</h2>
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="https://in.linkedin.com/in/nitishkhobragade" class="social-button social-linkedin text-gray-700 hover:text-white">
+                <img src="img/social/linkedin-ico.png" alt="LinkedIn" class="w-8 h-8">
+            </a>
+            <a href="https://github.com/nitishkhobragade/" class="social-button social-github text-gray-700 hover:text-white">
+                <img src="img/social/github-ico.png" alt="github" class="w-8 h-8">
+            </a>
+            <a href="https://www.freecodecamp.org/nitishkhobragade" class="social-button social-linkedin text-gray-700 hover:text-white">
+                <img src="img/social/freecodecamp-ico.png" alt="freeCodeCamp" class="w-8 h-8">
+            </a>
+        </div>
+        <!-- social ended -->
 
-                            <input type="number" name="Phone" maxlength="10" class="formfield" id="numericInput" placeholder="Enter Contact Number"  required /> 
-
-                            <input type="email" name="Email" id="" placeholder="Enter your email"  class="formfield" required/>
-
-                            <input type="text" name="Subject" id="" placeholder="Enter your subject"  class="formfield" required/>
-
-                            <textarea name="Message" id="" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>
-                        </div>
-
-                        <div>
-                            <button type="submit" class="stylish-btn" id="submit-btn">Send Message <i class="submit-icon fa-solid fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <!-- projects started  -->
+ <!-- projects started  -->
+<h2 class="text-4xl font-semibold mt-4 mb-4 text-center ">Projects</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="card bg-white rounded-lg shadow-md overflow-hidden relative group dark:bg-gray-800 project-card">
+        <!-- Image with zoom effect on hover -->
+        <img src="./img/projects/js_mini_projects.png" alt="Project 1" class="w-full h-32 object-cover transform transition-transform duration-300 group-hover:scale-105">
+        
+        <!-- Centered hover text -->
+        <div class="absolute inset-0 bg-gray-800 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <a href="https://nitishkhobragade.github.io/js_small_projects/" class="text-white text-center">
+                <p class="text-lg font-semibold mb-2">View Project</p>
+            </a>
         </div>
 
-        <!-- footer started  -->
-        <footer>
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div class="footer-faded-text">Nitish Kumar</div>
+        <!-- Non-clickable icons -->
+        <div class="project-icons flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <img src="./img/stack/HTML.png" alt="View" class="w-6 h-6 project-icon">
+            <img src="./img/stack/CSS.png" alt="GitHub" class="w-6 h-6 project-icon">
+            <img src="./img/stack/Javascript.svg" alt="LinkedIn" class="w-6 h-6 project-icon">
+        </div>
 
-                    <div class="link-wrapper">
-                        <div>
-                            <a href="#projects">Projects</a>
-                        </div>
-
-                        <div>
-                            <a href="#skills" >Skills</a>
-                        </div>
-
-                        <div>
-                            <a href="#contactme" >Contact Me</a>
-                        </div>
-                    </div>
-
-                    <div class="icon-wrapper">
-                        <a href="https://www.linkedin.com/in/nitishkhobragade/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
-                        <a href="https://github.com/nitishkhobragade/" target="_blank"><i class="fa-brands fa-github icon"></i></a>
-                        <a href="https://twitter.com/djnitish97/" target="_blank"><i class="fa-brands fa-x-twitter icon"></i></a>
-                        <a href="https://www.instagram.com/nitish_khobragade/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
-                        <a href="mailto: nitishkhobragade89@gmail.com" target="_blank"><i class="fa-regular fa-envelope icon"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
+        <div class="p-4">
+            <h3 class="text-lg font-semibold">JavaScript Mini Projects</h3>
+            <p class="text-gray-600 dark:text-gray-300">Collection Of Mini Projects Created by me in JavaScript.</p>
+        </div>
     </div>
 
+    <!-- Repeat for additional project cards -->
+    <div class="card bg-white rounded-lg shadow-md overflow-hidden relative group dark:bg-gray-800 project-card">
+        <img src="https://nitishkhobragade.github.io/js_small_projects/26_weather_app_01/26_weather_app_01.png" alt="Project 2" class="w-full h-32 object-cover transform transition-transform duration-300 group-hover:scale-105">
+        
+        <div class="absolute inset-0 bg-gray-800 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <a href="https://nitishkhobragade.github.io/js_small_projects/26_weather_app_01/index.html" class="text-white text-center">
+                <p class="text-lg font-semibold mb-2">View Project</p>
+            </a>
+        </div>
+
+        <div class="project-icons flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <img src="./img/stack/HTML.png" alt="View" class="w-6 h-6 project-icon">
+            <img src="./img/stack/CSS.png" alt="GitHub" class="w-6 h-6 project-icon">
+            <img src="./img/stack/Javascript.svg" alt="LinkedIn" class="w-6 h-6 project-icon">
+        </div>
+
+        <div class="p-4">
+            <h3 class="text-lg font-semibold">Weather App (API)</h3>
+            <p class="text-gray-600 dark:text-gray-300">Developed a Weather App using HTML, CSS, and JavaScript that
+                fetches real-time weather data via a public API. Users can search cities
+                to instantly view detailed weather updates.</p>
+        </div>
+    </div>
+
+    <div class="card bg-white rounded-lg shadow-md overflow-hidden relative group dark:bg-gray-800 project-card">
+        <!-- Image with zoom effect on hover -->
+        <img src="https://nitishkhobragade.github.io/js_small_projects/19_javascript_music_player/19_javascript_music_player.png" alt="Project 1" class="w-full h-32 object-cover transform transition-transform duration-300 group-hover:scale-105">
+        
+        <!-- Centered hover text -->
+        <div class="absolute inset-0 bg-gray-800 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <a href="https://nitishkhobragade.github.io/js_small_projects/19_javascript_music_player/index.html" class="text-white text-center">
+                <p class="text-lg font-semibold mb-2">View Project</p>
+            </a>
+        </div>
+
+        <!-- Non-clickable icons -->
+        <div class="project-icons flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <img src="./img/stack/HTML.png" alt="View" class="w-6 h-6 project-icon">
+            <img src="./img/stack/CSS.png" alt="GitHub" class="w-6 h-6 project-icon">
+            <img src="./img/stack/Javascript.svg" alt="LinkedIn" class="w-6 h-6 project-icon">
+        </div>
+
+        <div class="p-4">
+            <h3 class="text-lg font-semibold">Music Player (Vanilla JavaScript)</h3>
+            <p class="text-gray-600 dark:text-gray-300">Developed a functional Music Player with HTML, CSS, and JavaScript,
+                featuring preloaded songs and controls for play, pause, next,
+                previous, and playlist navigation. Deployed on GitHub, the player
+                offers a seamless front-end audio experience.</p>
+        </div>
+    </div>
+
+    <!-- enter new project here  -->
+    <div class="card bg-white rounded-lg shadow-md overflow-hidden relative group dark:bg-gray-800 project-card">
+        <!-- Image with zoom effect on hover -->
+        <img src="https://nitishkhobragade.github.io/js_small_projects/13_whack_a_mole(game)/13_whack_a_mole(game).png" alt="Project 1" class="w-full h-32 object-cover transform transition-transform duration-300 group-hover:scale-105">
+        
+        <!-- Centered hover text -->
+        <div class="absolute inset-0 bg-gray-800 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <a href="https://nitishkhobragade.github.io/js_small_projects/13_whack_a_mole(game)/index.html" class="text-white text-center">
+                <p class="text-lg font-semibold mb-2">View Project</p>
+            </a>
+        </div>
+
+        <!-- Non-clickable icons -->
+        <div class="project-icons flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <img src="./img/stack/HTML.png" alt="View" class="w-6 h-6 project-icon">
+            <img src="./img/stack/CSS.png" alt="GitHub" class="w-6 h-6 project-icon">
+            <img src="./img/stack/Javascript.svg" alt="LinkedIn" class="w-6 h-6 project-icon">
+        </div>
+
+        <div class="p-4">
+            <h3 class="text-lg font-semibold">JavaScript Mini Projects</h3>
+            <p class="text-gray-600 dark:text-gray-300">Collection Of Mini Projects Created by me in JavaScript.</p>
+        </div>
+    </div>
+    <!-- enter new project here  -->
+
+</div>
 
 
-   
-   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-   <script>
+<!-- Add more project cards as needed -->
+<!-- project ended  -->
+
+    </div>
+    <!-- footer started  -->
+     <!-- Footer -->
+     <footer id="footer" class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-300 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="footer-faded-text text-center md:text-left mb-4 md:mb-0 font-bold">
+                    Nitish Kumar
+                </div>
+    
+                <div class="link-wrapper flex flex-col md:flex-row mb-4 md:mb-0">
+                    <div class="mx-2">
+                        <a href="#projects" class="footer-link">Projects</a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="#skills" class="footer-link">Skills</a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="#contactme" class="footer-link">Contact Me</a>
+                    </div>
+                </div>
+    
+                <div class="icon-wrapper flex space-x-4">
+                    <a href="https://www.linkedin.com/in/nitishkhobragade/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/nitishkhobragade/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/djnitish97/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nitish_khobragade/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:nitishkhobragade89@gmail.com" target="_blank" class="footer-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer ended   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const toggleIcon = document.getElementById('toggle-icon');
+        const body = document.body;
+        const footer = document.getElementById('footer');
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            footer.classList.toggle('dark');
+            toggleIcon.src = body.classList.contains('dark') ? './img/sun.png' : './img/moon.png';
+        });
+    </script>
+    <script>
     var typeData = new Typed(".role", {
-      strings: [
+        strings: [
         "Software Engineer",
         "Full Stack Developer",
         "Web Developer",
         "Coder",
-      ],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      backDelay: 1000,
-    });
-  </script>
-   <script>
-    // Get the input element
-    var numericInput = document.getElementById("numericInput");
-
-    // Add an event listener for input validation
-    numericInput.addEventListener("input", function () {
-        // Remove non-numeric characters
-        this.value = this.value.replace(/\D/g, '');
-
-        // Limit the length to 10 digits
-        if (this.value.length > 10) {
-            this.value = this.value.slice(0, 10);
-        }
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
     });
     </script>
 </body>
 </html>
-
-                
