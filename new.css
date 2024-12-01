@@ -132,10 +132,12 @@
 
 .footer-link {
     transition: color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-link:hover {
     color: #4A90E2; /* Change this to your desired hover color */
+    font-weight: bold;
 }
 
 .footer-icon {
@@ -159,3 +161,29 @@
 .hero-section-heading .role:hover {
     color: #17c7a9; /* Orange color for a hover effect */
 }
+
+/* Social Icon Colors  */
+.social-icon {
+    filter: drop-shadow(0 2px 6px rgba(232, 239, 232, 0.863));
+    width: 2rem; /* Adjusts the size of the icons */
+    height: 2rem;
+    transition: filter 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    filter: drop-shadow(0 2px 8px rgba(255, 140, 0, 0.7)); /* More intense shadow on hover */
+}
+
+/* action button style  */
+.actionBtn > a > span > img {
+  height: 18px;
+  width: 18px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+/* .actionBtn > a > img {
+    height: 18px;
+    width: 18px;
+
+  } */
